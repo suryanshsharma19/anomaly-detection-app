@@ -56,7 +56,7 @@ http://localhost:8501
 ## 🚀 Deployment
 
 This application is deployed on Streamlit Cloud and can be accessed at:
-[Streamlit App Link](https://your-app-name.streamlit.app)
+[Anomaly Detection App](https://anomaly-detection-app-y2pxmrdvbonqmp2xfvwihh.streamlit.app/)
 
 ## 📝 Project Structure
 
