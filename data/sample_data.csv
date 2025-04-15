@@ -1,0 +1,15 @@
+# data/sample_data.csv
+timestamp,value
+2023-10-27T10:00:00Z,101.5
+2023-10-27T10:00:01Z,98.2
+2023-10-27T10:00:02Z,103.1
+2023-10-27T10:00:03Z,99.9
+# ... (add maybe 50-100 "normal" rows around 95-105 for training) ...
+2023-10-27T10:01:30Z,101.8
+2023-10-27T10:01:31Z,155.8  # Potential Anomaly High
+2023-10-27T10:01:32Z,100.5
+2023-10-27T10:01:33Z,97.6
+2023-10-27T10:01:34Z,45.1   # Potential Anomaly Low
+2023-10-27T10:01:35Z,101.1
+2023-10-27T10:01:36Z,98.9
+# ... add more data rows ...

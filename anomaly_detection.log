@@ -1,0 +1,30 @@
+2025-04-14 23:04:55,170 - AnomalyApp - INFO - Model saved to 'iforest_model_gui_value.joblib'
+2025-04-14 23:05:29,221 - AnomalyApp - ERROR - File processing error: Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].
+Traceback (most recent call last):
+  File "C:\Users\surya\OneDrive\Documents\Python\Realtime_Anomaly_detection\app.py", line 423, in <module>
+    anomalies = detect_anomalies_in_df(
+        df,
+    ...<4 lines>...
+        config.config['model']['model_prefix']
+    )
+  File "C:\Users\surya\OneDrive\Documents\Python\Realtime_Anomaly_detection\app.py", line 305, in detect_anomalies_in_df
+    precision, recall, f1, _ = precision_recall_fscore_support(
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        y_true, y_pred, average='binary'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_classification.py", line 1830, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_classification.py", line 1613, in _check_set_wise_labels
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Target is multiclass but average='binary'. Please choose another average setting, one of [None, 'micro', 'macro', 'weighted'].
+2025-04-14 23:09:02,972 - AnomalyApp - INFO - Loaded model from 'iforest_model_gui_value.joblib' trained on 2025-04-14T23:04:55.092749
+2025-04-14 23:14:53,276 - AnomalyApp - INFO - Loaded model from 'iforest_model_gui_value.joblib' trained on 2025-04-14T23:04:55.092749
+2025-04-14 23:29:56,047 - AnomalyApp - INFO - Loaded model from 'iforest_model_gui_value.joblib' trained on 2025-04-14T23:04:55.092749
+2025-04-14 23:34:49,618 - AnomalyApp - INFO - Model saved to 'iforest_model_gui_value.joblib'
+2025-04-14 23:39:10,562 - AnomalyApp - INFO - Model saved to 'iforest_model_gui_value.joblib'
